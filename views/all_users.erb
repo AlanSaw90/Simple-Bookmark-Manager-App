@@ -1,0 +1,14 @@
+
+<a href='/'> Go back to Home</a>
+<h1> Listing All Users (<%= @users.count %>)</h1>
+
+<% if !@users.empty? %>
+  <% @users.each do |user| %>
+    <div>
+      <p>Full Name: <%= user.full_name %></p>
+      <p>Email: <%= user.email %></p>
+    </div>
+    <% end %>
+<% else %>
+  No users to be shown
+<% end %>

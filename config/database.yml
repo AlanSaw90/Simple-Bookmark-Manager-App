@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: bookmark_manager_app
+  host: localhost
+  username: alan_saw90
+  password: Free2Air90

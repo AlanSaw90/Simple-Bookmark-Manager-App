@@ -1,0 +1,18 @@
+<h1>Bookmark Manager App</h1>
+
+<div>
+  <% if @visitor %>
+    Hello, <%= @visitor %>!
+  <% else %>
+    <form action="/welcome">  <!-- browser send a request to the URL specified in the action attribute -->
+      <p>What's your name?</p>
+      <input type ="text" name="name"> <!-- "name" represent name param in welcome route -->
+      <input type="submit" value="submit">
+    </form>
+  <% end %>
+</div>
+
+<div>
+  <a href='/signup'>Sign Up</a>  <!-- /signup will redirect you to the signup url page -->
+  <a href='#'>Log In</a>
+</div>
